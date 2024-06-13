@@ -1,0 +1,7 @@
+@import url('./main-layout.css');
+@import url('./views/fitness-detail-view.css');    html {
+      --lumo-error-color: hsl(341, 100%, 61%);
+      --lumo-error-color-50pct: hsla(341, 100%, 61%, 0.5);
+      --lumo-error-color-10pct: hsla(341, 100%, 61%, 0.1);
+
+    }
