@@ -4,20 +4,20 @@
     <modelVersion>4.0.0</modelVersion>
     <!-- Project from https://start.vaadin.com/project/52f5fe22-b823-4ce5-81b5-aa86dd5552fb -->
     <groupId>com.example.application</groupId>
-    <artifactId>my-app</artifactId>
-    <name>my-app</name>
+    <artifactId>personal_fitness_app4</artifactId>
+    <name>personal_fitness_app4</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
         <java.version>17</java.version>
-        <vaadin.version>24.4.1</vaadin.version>
+        <vaadin.version>24.3.12</vaadin.version>
     </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.6</version>
+        <version>3.2.5</version>
     </parent>
 
     <repositories>
@@ -87,6 +87,11 @@
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-testbench-junit5</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
@@ -189,7 +194,9 @@
                         <configuration>
                             <trimStackTrace>false</trimStackTrace>
                             <enableAssertions>true</enableAssertions>
+                            <frontendDirectory>src/main/frontend</frontendDirectory>
                         </configuration>
+
                     </plugin>
                 </plugins>
             </build>

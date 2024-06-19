@@ -18,7 +18,7 @@ import org.springframework.context.annotation.Bean;
  *
  */
 @SpringBootApplication
-@Theme(value = "my-app")
+@Theme(value = "personal_fitness_app4")
 public class Application implements AppShellConfigurator {
 
     public static void main(String[] args) {
